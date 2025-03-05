@@ -39,7 +39,7 @@ Toy Implementation of the C++ Standard Template Library (STL). Course project of
 
 ### 内存泄漏？
 
-如果你想在本地测试自己的代码是否存在内存泄漏，请点击[如何检测内存泄漏？](./detect-memory-leak/detect-memory-leak.md)
+如果你想在本地测试自己的代码是否存在内存泄漏，推荐了解 Valgrind 工具。
 
 当然，**你不一定非要在自己电脑上测试**。如果你提交的代码中存在内存泄漏，OJ 会告诉你的。
 
