@@ -1,4 +1,4 @@
-# STLite-Honor-2024
+# STLite-Honor-2025
 Toy Implementation of the C++ Standard Template Library (STL). Course project of Data Structure Honor (2025 Spring), SJTU
 
 ## 内容概要
