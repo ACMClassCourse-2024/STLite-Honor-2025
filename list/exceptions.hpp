@@ -5,18 +5,19 @@
 #include <cstring>
 #include <string>
 
+/*
+ * You don't have to implement exceptions.hpp.
+ * Just remember to throw exception when needed.
+ */
 namespace sjtu {
 
 class exception {
-   protected:
+protected:
     const std::string variant = "";
     std::string detail = "";
-
-   public:
-    exception() {
-    }
-    exception(const exception &ec) : variant(ec.variant), detail(ec.detail) {
-    }
+public:
+    exception() {}
+    exception(const exception &ec) : variant(ec.variant), detail(ec.detail) {}
     virtual std::string what() {
         return variant + " " + detail;
     }
@@ -37,6 +38,6 @@ class invalid_iterator : public exception {
 class container_is_empty : public exception {
     /* __________________________ */
 };
-}  // namespace sjtu
+}
 
 #endif

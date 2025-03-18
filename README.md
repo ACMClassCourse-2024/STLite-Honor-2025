@@ -26,16 +26,24 @@ Toy Implementation of the C++ Standard Template Library (STL). Course project of
 
 ## 文件说明
 
-以 vector 为例，在 vector 文件夹下分别有数据和接口文件。
+以 list 为例，在 list 文件夹下分别有数据和接口文件。
 
-* **其中 `vector.hpp` 是你仅需实现的文件，也是 OJ 上提交的代码。**
+* **其中 `list.hpp` 是你仅需实现的文件，也是 OJ 上提交的代码。**
 
 * `exceptions.hpp` 与 `utility.hpp` 是两个辅助文件(**不可修改**)，提供了异常处理类与 pair 类，你可以在你的代码中自由使用。
 * data 文件夹中有多组测试数据，分别位于各个文件夹中。
 
 ## 如何测试你的代码？
 
-以 vector 为例，若要在本地测试，请将你的代码 `vector.hpp`、相应测试点下的 cpp 文件 `code.cpp`  和 `class-bint.hpp`, `class-integer.hpp`, `class-matrix.hpp`, `utility.hpp`, `exceptions.hpp` 放在同一个目录下编译运行。
+如果你使用 `cmake`，可以先进入项目根目录，运行以下命令测试你的代码：
+
+```
+mkdir build
+cd build
+cmake ..
+make
+make test
+```
 
 ### 内存泄漏？
 
@@ -45,6 +53,6 @@ Toy Implementation of the C++ Standard Template Library (STL). Course project of
 
 ## 评测及提交方式
 
-* 以 vector 为例，你只需要将你 `vector.hpp` 中的代码粘贴到 OJ 上提交即可
+* 以 list 为例，你只需要将你 `list.hpp` 中的代码粘贴到 OJ 上提交即可
 * 评测**开 O2 优化**
 * 由于 Valgrind 内存检测会导致程序运行时间增长，**OJ 上的 Memory Check 会相应扩大时限**。
