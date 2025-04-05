@@ -74,7 +74,7 @@ public:
          * TODO it->field
          * remember to throw if iterator is invalid
          */
-        T * operator ->() const noexcept {}
+        T * operator ->() const {}
         /**
          * a operator to check whether two iterators are same (pointing to the same memory).
          */
