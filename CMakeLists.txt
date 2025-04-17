@@ -12,5 +12,5 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
-add_subdirectory(list)
+add_subdirectory(linked_hashmap)
 enable_testing()
